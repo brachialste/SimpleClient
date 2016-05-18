@@ -4,6 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+	<Button
+		android:id="@+id/buttonConnect"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:layout_marginBottom="10dp"
+		android:text="Conectar"/>
 	<ListView android:id="@+id/ListView" 
 		android:layout_width="fill_parent" 
 		android:layout_height="fill_parent"
@@ -12,21 +19,30 @@
 		android:layout_weight="1.0" 
 		/>
 	<LinearLayout 
-		android:orientation="horizontal"
+		android:orientation="vertical"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		>
-		<EditText android:id="@+id/EditText"
-			android:layout_height="wrap_content" 
-			android:layout_width="wrap_content"
-			android:layout_weight="1.0"
-			android:layout_gravity="bottom" 
-			android:hint="@string/enter_message_hint" 
-			/>
+		<!--<EditText android:id="@+id/EditText"-->
+			<!--android:layout_height="wrap_content" -->
+			<!--android:layout_width="wrap_content"-->
+			<!--android:layout_weight="1.0"-->
+			<!--android:layout_gravity="bottom" -->
+			<!--android:hint="@string/enter_message_hint" -->
+			<!--/>-->
 		<Button
 			android:id="@+id/buttonSend"
-			android:layout_width="wrap_content"
-			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:layout_marginBottom="10dp"
 			android:text="Enviar"/>
+		<Button
+			android:id="@+id/buttonClose"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:layout_marginBottom="10dp"
+			android:text="Desconectar"/>
 	</LinearLayout>
 </LinearLayout>

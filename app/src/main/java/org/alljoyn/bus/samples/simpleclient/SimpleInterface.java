@@ -41,4 +41,31 @@ public interface SimpleInterface {
      */
     @BusMethod
     String Ping(String inStr) throws BusException;
+
+    /**
+     * Método encargado de conectar dos entidades con mensajes para el protocolo BSTP
+     * @param inBytes
+     * @return
+     * @throws BusException
+     */
+    @BusMethod
+    byte[] CONN(byte[] inBytes) throws BusException;
+
+    /**
+     * Método encargado de enviar mensajes de intercambio
+     * @param inBytes
+     * @return
+     * @throws BusException
+     */
+    @BusMethod
+    byte[] RQST(byte[] inBytes) throws BusException;
+
+    /**
+     * Método encargado de cerrar la comunicación con el protocolo BSTP
+     * @param inBytes
+     * @return
+     * @throws BusException
+     */
+    @BusMethod
+    byte[] CLSE(byte[] inBytes) throws BusException;
 }
